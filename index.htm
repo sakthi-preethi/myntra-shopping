@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    .q1 {
+
+        display: inline-flex;
+
+    }
+
+    .i1,
+    dl,
+    dd,
+    .w1,
+    .i2,
+    .i3,
+    .i4,
+    .iii {
+        display: inline-block;
+        margin-top: 7px;
+        margin-bottom: 10px;
+
+
+    }
+
+    .i1,
+    dl,
+    dd,
+    .w1,
+    .i2,
+    .i3,
+    .i4 {
+
+        margin-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .search {
+        display: inline-block;
+        border: 2px solid rgb(228, 220, 220);
+        margin-left: 20px;
+        border-radius: 5px;
+        
+        
+
+    }
+
+    .search>input {
+        padding-right: 80px;
+        padding-left: 16px;
+        border: none;
+        outline: none;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .search>i {
+        padding-left: 5px;
+    }
+
+    nav {
+        border-bottom: 2px solid;
+        box-shadow: #000000 1px 1px 7px 1px;
+    }
+
+    /* .div1 {
+        border: 1px solid;
+        box-shadow: #000000 1px 1px 7px 1px;
+    } */
+
+    .z1 {
+        display: block;
+        margin-left: 5px;
+        margin-bottom: -10px;
+        margin-top: 10px;
+    }
+    .iii{
+        margin-left: 130px;
+    }
+    .y1 {
+        display: flex;
+        background-image: linear-gradient(to right, rgb(255, 132, 31) 60%, black 40%);
+        color: white;
+        margin: 60px 150px 0px 150px;
+        padding: 10px;
+    }
+
+    .y1>h1 {
+        margin-top: 10px;
+        margin-left: 200px;
+
+    }
+
+    .y1>p {
+        margin-left: 450px;
+        text-align: center;
+    }
+
+    .sup {
+        background-color: black;
+        color: white;
+        display: inline-block;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .day {
+        background-color: white;
+        color: #000000;
+        display: inline-block;
+    }
+
+    .add {
+        margin-top: -19px;
+        margin-left: 150px;
+    }
+
+    .g1 {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .g1>dd {
+        margin: 10px 60px 10px 60px;
+    }
+
+    .co {
+        text-align: center;
+        margin-top: 20px;
+        text-decoration-color: blueviolet;
+    }
+
+    .flat {
+        background-color: rgb(255, 132, 31);
+        color: white;
+        padding: 5px;
+        border-right: 3px solid black;
+        border-style: groove;
+    }
+
+    .flat>.fl1 {
+        display: inline-block;
+    }
+
+    .flat,
+    .fl2 {
+        display: inline-block;
+    }
+    .i2 ,.i3, .i4{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .flat>.fl2>p,
+    h4 {
+        margin-bottom: 5px;
+        margin-left: 60px;
+        padding-right: 30px;
+        text-align: center;
+
+    }
+
+    .fl2>h4 {
+        background-color: #000000;
+        color: white;
+        display: inline-block;
+        padding: 3px;
+
+    }
+
+    .fl2>p {
+        padding-left: 9px;
+    }
+
+    .flat1 {
+        background-color: rgb(255, 132, 31);
+        color: white;
+        padding: 5px;
+        border-right: 3px solid black;
+        border-style: groove;
+    }
+
+    .flat1>.fl1 {
+        display: inline-block;
+    }
+
+    .flat1,
+    .fl2 {
+        display: inline-block;
+    }
+
+    .flat1>.fl2>p,
+    h4 {
+        margin-bottom: 5px;
+        margin-left: 60px;
+        padding-right: 30px;
+        text-align: center;
+
+    }
+
+    .fl2>h4 {
+        background-color: #000000;
+        color: white;
+        display: inline-block;
+        padding: 3px;
+
+    }
+
+    .fl2>p {
+        padding-left: 9px;
+    }
+
+    .flat {
+        margin-left: 200px;
+    }
+
+    .flat1 {
+        margin-left: 250px;
+        margin-top: 30px;
+    }
+
+    .jj {
+        border: 3px solid rgb(255, 128, 0);
+        text-align: center;
+        padding: 15px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+    }
+
+    .sl>p {
+
+        text-align: center;
+    }
+
+    .sl {
+        border: 3px solid rgb(255, 123, 0);
+        border-style: outset;
+
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    .df {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+
+    .pl>p {
+        text-align: center;
+    }
+
+    .pl {
+        border: 2px solid;
+        margin-left: 20px;
+        color: white;
+        padding: 5px;
+        /* background-image: linear-gradient(to bottom, rgb(255, 85, 0) 60%, black 40%); */
+        background-color: #000000;
+    }
+
+    .pl:hover {
+        box-shadow: 0px 0px 7px 8px orange;
+    }
+
+    .pll {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 35px;
+        margin-bottom: 25px;
+    }
+
+    .pll1 {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 380px;
+        margin-bottom: 25px;
+    }
+
+    .bib {
+        display: flex;
+        border: 5px solid rgb(255, 115, 0);
+        background-image: linear-gradient(to top, rgb(240, 192, 159), white);
+        margin-left: 80px;
+        margin-right: 80px;
+        color: #433d3d;
+    }
+
+    .rt {
+        display: flex;
+    }
+
+    .rt>.fds>p {
+        margin-top: 15px;
+    }
+
+    .nnn {
+        display: inline-flex;
+        border: 2px solid;
+        padding: 5px;
+        border-radius: 6px;
+        margin-right: 20px;
+        background-color: white;
+    }
+
+    .mmm {}
+
+    .nnn>.nbnb {
+        margin-top: 10px;
+    }
+
+    .jhj {
+        margin-left: 240px;
+        margin-top: 10px;
+    }
+
+    .cocs>p {
+        margin-right: 250px;
+    }
+
+    .tltl {
+        display: flex;
+        margin-top: 80px;
+        margin-left: 130px;
+        color: #424243;
+    }
+
+    .tltl>.ltl,
+    .ema,
+    .rwi,
+    .cp {
+        margin-right: 110px;
+    }
+
+    .wq,
+    .cpc {
+        margin-top: 5px;
+    }
+
+    .iokj>i {
+        margin-right: 5px;
+    }
+
+    .itm {
+        color: #424243;
+        margin-left: 130px;
+    }
+
+    .cocs {
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 110px;
+    }
+
+    .r4 {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .r5 {
+        margin-left: 600px;
+        margin-bottom: 10px;
+
+    }
+
+    .r5>p {
+        margin-top: 35px;
+    }
+
+    .add>img {
+        width: 1174px;
+        height: 400px;
+    }
+
+    .gym {
+        font-size: x-large;
+        font-weight: 50px;
+    }
+
+    .fds {
+        font-size: large;
+        margin-right: 20px;
+
+    }
+    .snow{
+        border: 2px solid white;
+        background-color: aliceblue;
+        color: #000000;
+    }
+    .snow:hover{
+        background-color: rgb(166, 193, 216);
+    }
+
+    @media screen and (max-width:500px) {
+        body {
+            background-color: #ffffff;
+        }
+
+        dl,
+        dd {
+            margin-left: 7px;
+            font-size: small;
+            display: block;
+            text-align: center;
+            background-color: rgb(172, 165, 154);
+            margin-top: 0px;
+            margin-left: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        dl>dd:hover {
+            background-color: aliceblue;
+        }
+
+        .q1 {
+            /* margin-left: 220px; */
+            background-color: rgb(0, 0, 0);
+            display: block;
+            padding-left: 215px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .search {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .i2,
+        .i3,
+        .i4 {
+            display: none;
+        }
+
+        .y1 {
+            display: block;
+            margin: 0px;
+            background-color: white;
+            background-image: none;
+
+        }
+
+        .y1>h1 {
+            margin: 0px;
+            text-align: center;
+            background-color: orange;
+        }
+
+        .y1>p {
+            color: #000000;
+            margin: 0px;
+            margin-top: 5px;
+        }
+
+        .add {
+            margin: 0px;
+            width: 100px;
+        }
+
+        .add>img {
+            width: 400px;
+            height: 300px;
+            margin-left: 50px;
+        }
+
+        .g1 {
+            margin: 0px;
+            background-color: white;
+            color: #000000;
+            margin-left: 20px;
+        }
+
+        .eeee2 {
+            display: none;
+        }
+
+        .flat,
+        .flat1 {
+            margin: 0px;
+            margin-top: 10px;
+            margin-left: 47px;
+        }
+
+        .df {
+            overflow-x: auto;
+            margin: 0px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .df::-webkit-scrollbar {
+            width: 0px;
+
+        }
+
+        .jj {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .pll>.pl {
+            width: 100px;
+            height: 150px;
+        }
+
+        .pll>.pl>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .pll>.pl>p {
+            font-size: small;
+        }
+
+        .pll1>.pl {
+            width: 100px;
+            height: 150px;
+        }
+
+        .pll1>.pl>img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .pll1>.pl>p {
+            font-size: small;
+        }
+
+        .pll {
+            overflow-x: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0px;
+        }
+
+        .pll::-webkit-scrollbar {
+            width: 0px;
+
+        }
+
+        .pll1 {
+            margin-left: 40px;
+            margin-right: 10px;
+            padding: 0px;
+        }
+
+        .bib {
+            display: block;
+            margin: 0px;
+            padding: 5px;
+            margin-left: 3px;
+        }
+
+        .bib1>p {
+            display: none;
+        }
+
+        .fds {
+            margin: 0px;
+            margin-left: -230px;
+            text-align: center;
+
+        }
+
+        .tltl {
+            margin: 0;
+            display: block;
+            text-align: center;
+        }
+
+        .ltl {
+            margin: 0;
+            margin-left: 100px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .cp {
+            margin: 0;
+        }
+
+        .ema {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+
+        .rwi {
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+
+        .itm {
+            margin: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .cocs {
+            display: inline-block;
+            margin: 0;
+            margin-top: 30px;
+            margin-left: 100px;
+            margin-bottom: 30px;
+        }
+
+        .cocs>p {
+            margin: 0px;
+            text-align: center;
+        }
+
+
+
+        .r4 {
+            display: block;
+            margin-top: -20px;
+            text-align: center;
+            margin-left: -10px;
+        }
+
+        .office {
+            margin-left: 70px;
+        }
+
+        .r5 {
+            display: block;
+            margin: 0px;
+        }
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="q1"><img src="./WhatsApp_Image_2024-06-16_at_22.30.02_3bd27f35-removebg-preview (1).png" alt="logo"
+                width="60px" height="30px"></div>
+        <dl>
+            <dd>MEN</dd>
+            <dd>WOMEN</dd>
+            <dd>KIDS</dd>
+            <dd>HOME & LIVING</dd>
+            <dd>BEAUTY</dd>
+            <dd>STUDIO <sup
+                    style="color: rgb(222, 49, 156); font-weight: 300; text-shadow: rgb(255, 0, 85) 2px 2px 3px ;">New</sup>
+            </dd>
+        </dl>
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i><input type="text"
+                placeholder="search a product">
+
+        </div>
+        <!-- <div class="w1">
+            <dl>
+                <dd>PROFILE</dd>
+                <dl>WHITELIST</dl>
+                <dl>BAG</dl>
+            </dl>
+        </div> -->
+        <div class="iii">
+        <div class="i2">
+            <div class="z1">
+                <center><i class="fa-regular fa-user" style="color: #000000;"></i>
+            </div>
+            </center>
+            <dd style="margin-right: 27px;">Profile</dd>
+        </div>
+        <div class="i3">
+            <div class="z1">
+                <center><i class="fa-regular fa-heart" style="color: #000000;"></i>
+            </div>
+            </center>
+            <dd style="margin-right: 27px;">Whitelist</dd>
+        </div>
+        <div class="i4">
+            <div class="z1">
+                <center><i class="fa-solid fa-bag-shopping" style="color: #000000;"></i>
+            </div>
+            </center>
+            <dd style="margin-right: 27px;">Bag</dd>
+        </div>
+    </div>
+    </nav>
+    <div class="div1"></div>
+    <div class="y1">
+        <h1>FLAT 400$ OFF</h1>
+        <p>THE 1ST PRODUCT<br> WATCH M VIA<br> MYTRA</p>
+    </div>
+    <!-- <h1>M</h1>
+<div class="sup">
+    
+    <h1>SUPER</h1>
+    <h2>STYLE UP <Br> DAYS</h2>
+       
+</div>
+<div class="day">
+    <p>JUN 14-23</p>
+</div> -->/
+    <div class="add">
+        <img src="./WhatsApp Image 2024-06-22 at 16.11.51_9ed41316.jpg" alt="">
+        <!-- <button style="position: relative;">HIM</button> -->
+    </div>
+    <div class="g1">
+        <dd>100% secure payment</dd>
+        <dd class="eeee2">|</dd>
+        <dd>easy return and refund</dd>
+        <dd class="eeee2">|</dd>
+        <dd>100% orginal product</dd>
+    </div>
+    <div class="co">
+        <h1>COUPONS CORNER</h1>
+    </div>
+    <div class="flat">
+        <div class="fl1">
+            <h2> FLAT 100% OFFER</h2>
+            <p>on all product</p>
+        </div>
+        <div class="fl2">
+            <p>USE CODE</p>
+            <h4>MYT85JG85</h4>
+        </div>
+    </div>
+    <div class="flat1">
+        <div class="fl1">
+            <h2> FLAT 200% OFFER</h2>
+            <p>on all product</p>
+        </div>
+        <div class="fl2">
+            <p>USE CODE</p>
+            <h4>MYT05TR4Y</h4>
+        </div>
+    </div>
+    <div class="jj">
+        <h1>CRA<span class="zzzz" style="color: orangered; font-size: xxx-large; align-items: center; ">Z</span>Y DEALS</h1>
+        <p>Big savings all Days</p>
+    </div>
+    <div class="df">
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 09.52.14_26e649fe.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 10.59.25_76aac374.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 10.59.25_f2016124.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 10.59.26_6fd8c52d.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 10.59.26_779beb25.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+        <div class="sl">
+            <p style="font-size: larger;">Clarks</p>
+            <img src="./slimg/WhatsApp Image 2024-06-26 at 10.59.27_fc0ae1a7.jpg" alt="" width="200px" height="170px">
+            <p>High End Footware</p>
+            <P style="font-size: x-large;">UP TO 50% OFF</P>
+        </div>
+    </div>
+    <h1 style="margin-top: 70PX; text-align: center;">SHOP BY <U>CATEGERY</U></h1>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124241.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124320.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124345.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124416.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124447.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124514.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124553.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124635.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124718.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124746.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124821.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124847.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124919.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_124950.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125022.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125101.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125142.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125237.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125302.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125329.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125408.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125439.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125532.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125556.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125631.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125659.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125722.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125807.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125835.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125859.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125922.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_125945.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130023.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130102.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130123.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130154.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="pll1">
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130215.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130258.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+        <div class="pl">
+            <img src="./slimg/mytra/IMG_20240626_130319.jpg" alt="" width="200px" height="170px">
+            <p>Men's Ethnic Ware</p>
+            <p class="gym">50%-80% OFF</p>
+            <p class="snow">Shop Now</p>
+        </div>
+    </div>
+    <div class="bib">
+        <img src="./WhatsApp_Image_2024-06-26_at_15.15.13_f7ea6f41-removebg-preview.png" alt="" width="400px"
+            height="170px">
+
+
+        <div class="bib1">
+            <p
+                style="font-size: xx-large; margin-left: 210px; margin-top: 25px; color: rgb(255, 102, 0); font-weight: 300;">
+                MORE KNOCKOUT OFFER WAITING!</p>
+            <p style="font-size: 20px; text-align: center; margin-left: 200px;">Only on the <img
+                    src="./WhatsApp_Image_2024-06-16_at_22.30.02_3bd27f35-removebg-preview (1).png" alt="" height="30px"
+                    width="60px"> App</p>
+            <p style="font-size: smaller; margin-left: 488px; margin-top: -5px;">Myntra</p>
+            <div class="jhj">
+                <div class="rt">
+                    <div class="fds">
+                        <p style="font-size: large; margin-right: 20px;">Downlode Now</p>
+                    </div>
+                    <div class="nnn">
+
+                        <div class="nbnb" style="margin-right: 5px;">
+                            <i class="fa-brands fa-google-play fa-xl" style="color: #000000;"></i>
+                        </div>
+                        <div class="mmm">
+                            <p style="font-size: xx-small;">Downlode App On</p>
+                            <p style="font-size: large;">Google Play</p>
+                        </div>
+                    </div>
+                    <div class="nnn">
+                        <div class="nbnb" style="margin-right: 5px;">
+                            <i class="fa-brands fa-apple fa-2xl" style="color: #000000;"></i>
+                        </div>
+                        <div class="mmm">
+                            <p style="font-size: xx-small;">Downlode App On</p>
+                            <p style="font-size: large;">Google Play</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tltl">
+        <div class="ltl">
+            <p class="wq" style="margin-bottom: 25px;"> <b>ONLING SHOPPING</b></p>
+            <P class="wq">Men</P>
+            <p class="wq">Women</p>
+            <p class="wq">Kids</p>
+            <p class="wq">Home and Living</p>
+            <p class="wq">Beauty</p>
+            <p class="wq">Gift Cards</p>
+            <p class="wq">Mytra Insider</p>
+            <p class="wq" style="margin-bottom: 25px; margin-top: 25PX;"> <b>USEFUL LINKS</p></b>
+            <P class="wq">Blog</P>
+            <p class="wq">Careers</p>
+            <p class="wq">Site Map</p>
+            <p class="wq">Corporate information</p>
+            <p class="wq">Whitehat</p>
+            <p class="wq">Cleartrip</p>
+        </div>
+        <div class="cp">
+            <p class="cpc" style="margin-bottom: 25px;"><b>CUSTOMER POLICIES</p></b>
+            <p class="cpc">Contact Us</p>
+            <p class="cpc">FAQ</p>
+            <p class="cpc">T&C</p>
+            <p class="cpc">Terms of Use</p>
+            <p class="cpc">Track Orders</p>
+            <p class="cpc">Shipping</p>
+            <p class="cpc">Cancellation</p>
+            <p class="cpc">Returns</p>
+            <p class="cpc">Privicy Policy</p>
+            <p class="cpc">Grievance Officer</p>
+        </div>
+        <div class="ema">
+            <p style="margin-bottom: 30px;"><b>EXPERIENCE MYTRA APP ON MOBILE</p></b>
+            <div class="cci" style="margin-bottom: 30px;">
+                <div class="nnn" style="background-color: #000000; color: white;">
+
+                    <div class="nbnb" style="margin-right: 5px;">
+                        <i class="fa-brands fa-google-play fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="mmm">
+                        <p style="font-size: xx-small;">Downlode App On</p>
+                        <p style="font-size: large;">Google Play</p>
+                    </div>
+                </div>
+                <div class="nnn" style="background-color: #000000; color: white;">
+                    <div class="nbnb" style="margin-right: 5px;">
+                        <i class="fa-brands fa-apple fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="mmm">
+                        <p style="font-size: xx-small;">Downlode App On</p>
+                        <p style="font-size: large;">Google Play</p>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-bottom: 15px;"><b>KEEP IN TOUCH</p></b>
+            <div class="iokj">
+                <i class="fa-brands fa-square-facebook fa-2xl" style="color: #454545;"></i>
+                <i class="fa-brands fa-twitter fa-2xl" style="color: #494a4b;"></i>
+                <i class="fa-brands fa-youtube fa-2xl" style="color: #424243;"></i>
+                <i class="fa-brands fa-instagram fa-2xl" style="color: #454545;"></i>
+            </div>
+        </div>
+        <div class="rwi">
+            <p style="margin-bottom: 35px;"><b>100% ORGINAL</b> guarantee for <br>all products at mytra.com</p>
+            <p><b>Return within 14days</b> of <br> teceiving yiur order</p>
+        </div>
+    </div>
+    <div class="itm">
+        <p style="margin-top: 30px; margin-bottom: 28px;"><b>POPULAR SEARCHER</b></p>
+        <P style="word-spacing: 6px; line-height: 20px;">Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones |
+            Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok <br> Shoes | Puma
+            Shoes |
+            Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches |
+            Designer Blouse | Gowns |<br> Rings | Cricket Shoes | Forever 21 | Eye
+            Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses
+            |<br> Lehenga | Nike Shoes | Goggles | Bras | Suit | Chinos | Shoes |
+            Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees</P>
+
+        <div class="cocs">
+            <p>In Case of concern <span style="color: blue;"><b>Contact Us</b></span></p>
+            <p>@2024 www.myntya.com. All rights <br> reserved</p>
+            <p>A fliplcart company</p>
+        </div>
+        <p style="margin-bottom: 30px;" class="office"> <span><b>Registered Office Address
+                    Buildings Alyssa,</b></span><br>
+        <div class="r4">
+
+            <p>Begonia and Clover situated in Embassy Tech Village,<br>
+                Outer Ring Road,<br>
+                Devarabeesanahalli Village,
+                Varthur Hobli,<br>
+                Bengaluru- 560103, India</p>
+            <div class="r5">
+                <p> CIN: U72300KA2007PTC041799 <br>
+                    Telephone: +91-80-61561999</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h3 style="text-align: center; padding: 20px;">@Copyright</h5>
+</body>
+
+</html>

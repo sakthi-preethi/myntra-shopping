@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../mytra"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "m"
+	}
+}
